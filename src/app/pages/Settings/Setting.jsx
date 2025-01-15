@@ -48,18 +48,21 @@ const Setting = () => {
           </div>
           <div className="col-lg-4">
             <div className="mt-5">
-              <h4>Treatments</h4>
               {activeItem === 'Treatments' && (
-                <TreatmentMenu
-                  setTreatActiveItem={setTreatActiveItem}
-                  treatActiveItem={treatActiveItem}
-                />
+                <>
+                  <h4>Treatments</h4>
+                  <TreatmentMenu
+                    setTreatActiveItem={setTreatActiveItem}
+                    treatActiveItem={treatActiveItem}
+                  />
+                </>
               )}
             </div>
           </div>
           <div className="col-lg-4">
             <div className="treat-subcategory">
-              {treatActiveItem === 'Skin improvement' && <TreatSubcategories />}
+              {treatActiveItem === 'Skin improvement' &&
+                activeItem === 'Treatments' && <TreatSubcategories />}
             </div>
           </div>
         </div>

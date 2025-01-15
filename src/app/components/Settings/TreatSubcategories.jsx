@@ -38,7 +38,13 @@ function TreatmentForm() {
       <h5>Skin improvements {`(${savedTreatments.length})`}</h5>
       <p>Treatments</p>
 
-      <ul className="treatments-list mb-0">
+      <ul
+        className={`${
+          temporaryTreatments.length == 0
+            ? 'treatments-lists'
+            : 'treatments-list'
+        }`}
+      >
         {temporaryTreatments.map((treatment, index) => (
           <div className="d-flex justify-content-between">
             <li className="treatments" key={index}>
@@ -51,7 +57,11 @@ function TreatmentForm() {
         ))}
       </ul>
 
-      <ul className="treatments-list">
+      <ul
+        className={`${
+          savedTreatments.length == 0 ? 'treatments-lists' : 'treatments-list'
+        }`}
+      >
         {savedTreatments.map((treatment, index) => (
           <div className="d-flex justify-content-between">
             <li className="treatments" key={index}>
