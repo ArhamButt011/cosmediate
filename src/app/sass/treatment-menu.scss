@@ -1,0 +1,20 @@
+.treatment-menu-container {
+  padding: 20px;
+  border-radius: 5px;
+  border-radius: 20px;
+  width: 300px;
+  margin-top: 20px;
+}
+
+.treatment-menu-item {
+  margin-bottom: 15px;
+  color: #666;
+  padding-bottom: 0px;
+  padding: 10px;
+}
+
+.treatment-menu-item.active {
+  color: #6968ec;
+  background-color: #f3f6ff;
+  border-radius: 12px;
+}

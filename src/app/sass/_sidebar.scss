@@ -1,0 +1,106 @@
+.app-logo {
+  padding-left: 50px;
+  margin-right: 10px;
+}
+
+.sidebar {
+  display: flex;
+  height: 92vh;
+  float: left;
+  overflow: 'scroll initial';
+  background-color: #f9f9fb;
+}
+
+.sidebar-icons {
+  width: 20px;
+  height: 20px;
+  color: #8f95a9;
+}
+
+.menu-item {
+  line-height: 20px;
+  padding-bottom: 24px;
+  padding-inline: 10px;
+}
+
+.sidebar-text {
+  font-size: 9px;
+  font-weight: 500;
+  color: #8f95a9;
+}
+
+.gmeTLe {
+  position: relative !important;
+  display: flex !important;
+  -webkit-box-align: center !important;
+  align-items: center !important;
+  padding: 6px 2px 0px 6px !important;
+  height: 45px !important;
+  cursor: pointer !important;
+  outline: none !important;
+}
+
+.logout {
+  padding-bottom: 20px;
+  color: #8f95a9;
+}
+.logout:hover {
+  cursor: pointer;
+}
+
+.logout-text {
+  margin-top: 8px;
+  font-size: 9px;
+  line-height: 2%;
+  font-weight: 500;
+}
+
+.activeClicked {
+  background-color: #ffffff; /* Blue color, change it to your desired color */
+}
+
+/* Style for the icon color when active */
+.activeClicked .sidebar-icons {
+  color: #6968ec !important; /* Change this to any color you want for the active icon */
+}
+
+/* Optional: You can style the text color of the active tab as well */
+.activeClicked .sidebar-text {
+  color: #6968ec !important; /* Change this to any color you want for the active text */
+}
+
+// .react-bootstrap-table thead {
+//   position: sticky;
+//   top: 0;
+//   background-color: #333;
+//   z-index: 1021;
+//   color: white;
+// }
+
+// .Nav {
+//   width: 182%;
+// }
+
+// .img {
+//   width: 80rem;
+//   height: 40rem;
+//   object-fit: cover;
+// }
+
+// @media (min-width: 575px) {
+//   .Nav {
+//     width: 148%;
+//   }
+// }
+
+// @media (min-width: 768px) {
+//   .Nav {
+//     width: 112%;
+//   }
+// }
+
+// @media (min-width: 992px) {
+//   .Nav {
+//     width: 100%;
+//   }
+// }
